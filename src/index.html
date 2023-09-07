@@ -5,10 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page title</title>
     <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
+    
   </head>
   <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
+
+    <!-- ❗️❗️❗️ Add partials like so for every page
+    <include src="./partials/example.html"></include> -->
+    
+    <script type="module" src="./index.js"></script>
+    <!-- мусимо вказати type="module" бо ми підключили лише index.js, 
+    а створений utils.js не підключали, а вказуючи тип модуль, ми даємо 
+  знати коду, що index.js буде щось імпортувати та експортувати,
+отож взаємодіють між собою index.js i utils.js , а в html передається результат
+за самим лише підключеними index.js-->
   </body>
 </html>
